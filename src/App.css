@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Aladin', cursive;
 }
 
 .App-logo {
@@ -9,12 +10,11 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #658DEA;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,27 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #6D6B6B;
+  background-color: #ffff;
+  border-radius: 50%;
+  padding: 1em 2em;
+  text-decoration: none;
+}
+
+.ana {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+  justify-items: center;
+  gap: 2em;
+  padding: 2em;
+}
+
+.card {
+  background: white;
+  color: #6D6B6B  ;
+  padding: 1em;
+  border-radius: 8px;
 }
 
 @keyframes App-logo-spin {
