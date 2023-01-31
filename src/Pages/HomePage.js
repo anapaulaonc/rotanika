@@ -1,6 +1,8 @@
 import React from "react";
 import rotanika from "../Rotanika.png";
 import "../Styles/HomePage.css";
+import QuestionPage from "./QuestionPage";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -14,14 +16,9 @@ function HomePage() {
             Pense em um personagem real ou fictício, eu irei adivinhá-lo.
           </div>
         </div>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link className="App-link" to="/question">
           Jogar
-        </a>
+        </Link>
       </header>
     </div>
   );
