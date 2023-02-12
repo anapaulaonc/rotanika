@@ -8,7 +8,7 @@ function HomePage() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1> rotanika </h1>
+        <h1 style={{ fontWeight: "normal" }}> rotanika </h1>
         <div className="ana">
           <div className="card">Olá, eu sou rotanika!</div>
           <img src={rotanika} className="App-logo" alt="Rotanika" />

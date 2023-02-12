@@ -47,6 +47,69 @@
     padding: 1em;
     border-radius: 8px;
   }
+
+  .card-guess {
+    background: white;
+    color: #6D6B6B  ;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+  }
+
+  .lamp{
+
+    width: 20px;
+    height: 20px;
+
+  }
+  .button {
+    background: white;
+    color: #6D6B6B  ;
+    padding: 1em;
+    border-radius: 10em;
+    cursor: pointer;
+    border: none;
+    margin-top: 0.8em;
+    width: 15vw;
+  }
+
+  .middle {
+    padding: 0em 1em 1em 1em;
+    margin: 0em 1em 1em 1em;
+    
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 1em;
+    
+  }
+
+  .collum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  .progress-bar {
+    height: 20px;
+    width: 30vw;
+    border-radius: 25px;
+    /* background: linear-gradient(90deg, #FFFFFF 27.1%, rgba(255, 255, 255, 0) 27.11%); */
+    border: 1px solid #FFFFFF;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+    display: block;
+  }
   
   @keyframes App-logo-spin {
     from {
