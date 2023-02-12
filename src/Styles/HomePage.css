@@ -89,6 +89,26 @@
     
   }
 
+  .text {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 18vw;
+    height: 2em;
+    margin: 1em 1em ;
+  }
+
+  .text2 {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 18vw;
+    height: 25vh;
+    margin: auto ;
+  }
+
+  input[type=text]:focus {
+    border: 3px solid #fff;
+  }
+
   .collum {
     display: flex;
     flex-direction: column;

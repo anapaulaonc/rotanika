@@ -30,13 +30,16 @@ function QuestionPage({sessionId, person}) {
         <h1 style={{ fontWeight: "normal" }}> rotanika </h1>
         <div className="ana">
           <img src={rotanika} className="App-logo" alt="Rotanika" />
-          <div className="card">
-            Poxa, ajude-me a acertar na próxima
-            <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="Nome" />
-                <textarea placeholder={`Escreva uma característica que diferencie essa pessoa do(a) ${person}`} />
-                <button type="submit">Enviar</button>
-            </form>
+          <div className="middle"> 
+            <div className="card">
+              Poxa, ajude-me a acertar na próxima
+            </div>  
+              <form onSubmit={handleSubmit}>
+                  <input className="text" type="text" placeholder="Nome da pessoa que você pensou" />
+                  <textarea className="text2" placeholder={`Escreva uma característica que diferencie essa pessoa do(a) ${person}`} />
+                  <button className="button" type="submit">Enviar</button>
+              </form>
+            
           </div>
         </div>
       </header>

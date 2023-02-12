@@ -29,12 +29,14 @@ function AddPersonPage() {
         <h1> rotanika </h1>
         <div className="ana">
           <img src={rotanika} className="App-logo" alt="Rotanika" />
+         <div className="middle"> 
           <div className="card">
             Poxa, ajude-me a acertar na próxima
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Nome" />
                 <input type="text" placeholder="Escreva uma característica que diferencie esse pessoa da Wandinha" />
             </form>
+          </div>
           </div>
           <img src={progressBar} className="App-logo" alt="ProgressBar" />
         </div>
