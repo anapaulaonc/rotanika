@@ -2,17 +2,17 @@
     text-align: center;
     font-family: 'Aladin', cursive;
   }
-  
+
   .App-logo {
     height: 40vmin;
     pointer-events: none;
   }
-  
+
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {
     }
   }
-  
+
   .App-header {
     background-color: #658DEA;
     min-height: 100vh;
@@ -23,7 +23,7 @@
     font-size: calc(10px + 2vmin);
     color: white;
   }
-  
+
   .App-link {
     color: #6D6B6B;
     background-color: #ffff;
@@ -31,7 +31,7 @@
     padding: 1em 2em;
     text-decoration: none;
   }
-  
+
   .ana {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -40,12 +40,17 @@
     gap: 2em;
     padding: 2em;
   }
-  
-  .card {
+
+  .card, .home-card {
     background: white;
     color: #6D6B6B  ;
     padding: 1em;
     border-radius: 8px;
+    width: 25vw;
+  }
+
+  .home-card {
+    width: 15vw;
   }
 
   .card-guess {
@@ -53,30 +58,40 @@
     color: #6D6B6B  ;
     padding: 1em;
     border-radius: 8px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   .lamp{
-
     width: 20px;
     height: 20px;
-
+    margin: 0.5rem;
   }
-  .button {
+  .button, .question-button, .home-button {
     background: white;
     color: #6D6B6B  ;
-    padding: 1em;
-    border-radius: 10em;
+    padding: 0.7rem;
+    border-radius: 10rem;
     cursor: pointer;
     border: none;
-    margin-top: 0.8em;
     width: 15vw;
+    font-family: 'Aladin', cursive;
+    font-size: 1.2rem;
+  }
+
+  .question-button {
+    margin-top: 0.8em;
+  }
+
+  .home-button {
+    border-radius: 16rem;
+    width: 12vw;
+    font-size: 1.7rem;
   }
 
   .middle {
     padding: 0em 1em 1em 1em;
     margin: 0em 1em 1em 1em;
-    
+
   }
 
   .row {
@@ -86,7 +101,7 @@
     justify-content: center;
     margin-top: 1em;
     padding: 1em;
-    
+
   }
 
   .text {
@@ -130,7 +145,7 @@
     height: 100px;
     display: block;
   }
-  
+
   @keyframes App-logo-spin {
     from {
       transform: rotate(0deg);
