@@ -10,7 +10,7 @@ function GuessPage({ person, sessionId, setQuestion, setProgress }) {
 
     const handleClick = () => {
         axios
-            .post(`http://127.0.0.1:8000/continue/${sessionId}`)
+            .post(`https://zcnj6e.deta.dev/continue/${sessionId}`)
             .then((response) => {
                 console.log(response.data)
                 console.log(response.data.done)

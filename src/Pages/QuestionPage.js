@@ -17,7 +17,7 @@ function QuestionPage({
 
     const handleAnswer = (event) => {
         axios
-            .post(`http://127.0.0.1:8000/answer/${sessionId}`, {
+            .post(`https://zcnj6e.deta.dev/answer/${sessionId}`, {
                 answer: event.target.value,
             })
             .then((response) => {

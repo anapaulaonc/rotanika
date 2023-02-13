@@ -8,7 +8,7 @@ function HomePage({ setSessionId, setQuestion, setProgress }) {
     const navigate = useNavigate()
 
     const handleClick = () => {
-        axios.get('http://127.0.0.1:8000/start').then((response) => {
+        axios.get('https://zcnj6e.deta.dev/start').then((response) => {
             setSessionId(response.data.session_id)
             setQuestion(response.data.question.question)
             setProgress('0%')

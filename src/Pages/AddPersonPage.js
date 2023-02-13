@@ -18,7 +18,7 @@ function QuestionPage({ sessionId, person }) {
         }
 
         axios
-            .post(`http://127.0.0.1:8000/person/${sessionId}`, data)
+            .post(`https://zcnj6e.deta.dev/person/${sessionId}`, data)
             .then((res) => {
                 navigate('/')
             })
