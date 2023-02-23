@@ -10,7 +10,7 @@ function GuessPage({ person, sessionId, setQuestion, setProgress }) {
 
     const handleClick = () => {
         axios
-            .post(`https://zcnj6e.deta.dev/continue/${sessionId}`)
+            .post(`https://akinatorapi-1-g4100243.deta.app/continue/${sessionId}`)
             .then((response) => {
                 console.log(response.data)
                 console.log(response.data.done)

@@ -8,12 +8,14 @@ function HomePage({ setSessionId, setQuestion, setProgress }) {
     const navigate = useNavigate()
 
     const handleClick = () => {
-        axios.get('https://zcnj6e.deta.dev/start').then((response) => {
-            setSessionId(response.data.session_id)
-            setQuestion(response.data.question.question)
-            setProgress('0%')
-            navigate('/question')
-        })
+        axios
+            .get('https://akinatorapi-1-g4100243.deta.app/start')
+            .then((response) => {
+                setSessionId(response.data.session_id)
+                setQuestion(response.data.question.question)
+                setProgress('0%')
+                navigate('/question')
+            })
     }
 
     return (

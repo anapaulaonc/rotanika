@@ -17,7 +17,7 @@ function QuestionPage({
 
     const handleAnswer = (event) => {
         axios
-            .post(`https://zcnj6e.deta.dev/answer/${sessionId}`, {
+            .post(`https://akinatorapi-1-g4100243.deta.app/answer/${sessionId}`, {
                 answer: event.target.value,
             })
             .then((response) => {

@@ -18,7 +18,7 @@ function QuestionPage({ sessionId, person }) {
         }
 
         axios
-            .post(`https://zcnj6e.deta.dev/person/${sessionId}`, data)
+            .post(`https://akinatorapi-1-g4100243.deta.app/person/${sessionId}`, data)
             .then((res) => {
                 navigate('/')
             })
